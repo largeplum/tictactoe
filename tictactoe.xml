@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/com/lp/tictactoe">
+  <interface name="com.lp.tictactoe">
+    <method name="keypad">
+      <arg type="u" name="x" direction="in" />
+    </method>
+  </interface>
+</node>
