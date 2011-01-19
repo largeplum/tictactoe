@@ -1,4 +1,5 @@
 /* GTK - The GIMP Toolkit
+ * Copyright (C) 2011 Anax Li
  * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald
  *
  * This library is free software; you can redistribute it and/or
@@ -39,16 +40,16 @@ typedef struct _TictactoeClass  TictactoeClass;
 
 struct _Tictactoe
 {
-    GtkTable table;
-  
-    GtkWidget *buttons[3][3];
+	GtkTable table;
+
+	GtkWidget *buttons[3][3];
 };
 
 struct _TictactoeClass
 {
-    GtkTableClass parent_class;
+	GtkTableClass parent_class;
 
-    void (* tictactoe) (Tictactoe *ttt);
+	void (* tictactoe) (Tictactoe *ttt);
 };
 
 GType          tictactoe_get_type        (void);
